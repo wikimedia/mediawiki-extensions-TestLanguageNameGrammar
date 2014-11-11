@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amir E. Aharoni"
+		]
+	},
+	"testlanguagenamegrammar": "{{doc-special|TestLanguageNameGrammar}}",
+	"testlanguagenamegrammar-desc": "{{desc|name=TestLanguageNameGrammar|url=http://www.mediawiki.org/wiki/Extension:TestLanguageNameGrammar}}",
+	"testlanguagenamegrammar-grammarform": "A form label. Refers to a name of a grammar form thatis appropriate for a language.",
+	"testlanguagenamegrammar-message": "A form label. Refers to a MediaWiki message.",
+	"testlanguagenamegrammar-submit": "A label for the form's Submit button."
+}
