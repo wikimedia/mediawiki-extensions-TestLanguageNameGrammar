@@ -4,13 +4,13 @@
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 3 of the License, or
+ * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
  *
  * @file
  * @author Amir E. Aharoni
  * @copyright Copyright © 2014, Amir E. Aharoni
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 3.0 or later
+ * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2 or later
  */
 
 /**
