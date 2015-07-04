@@ -28,7 +28,6 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 		$this->setHeaders();
 		$this->outputHeader();
 
-		/*
 		$context = $this->getContext();
 		$form = new HtmlForm(
 			$this->getDataModel(),
@@ -39,8 +38,10 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 		$form->setSubmitText( $context->msg( 'testlanguagenamegrammar-submit' )->text() );
 		$form->setSubmitID( 'testlanguagenamegrammar-submit' );
 		$form->setSubmitCallback( array( $this, 'formSubmit' ) );
-		*/
 
+		$form->show();
+
+		/*
 		$out = $this->getOutput();
 
 		$out->addHtml( $this->getFormsTable(
@@ -48,27 +49,37 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 			'languageadverb',
 			'Она говорит {{GRAMMAR:languageadverb|$1}}'
 		) );
+		*/
 
 		return;
 	}
 
 	private function getDataModel() {
-		$m = array();
+		$model = array();
 
-		$m['grammarform'] = array(
-			'type' => 'info',
+		$model['language'] = array(
+			'type' => 'text',
+			'label-message' => 'testlanguagenamegrammar-language',
+		);
+
+		$model['grammarform'] = array(
+			'type' => 'text',
 			'label-message' => 'testlanguagenamegrammar-grammarform',
 		);
 
-		$m['message'] = array(
-			'type' => 'info',
-			'label-message' => 'testlanguagenamegrammar-message',
-		);
-
-		return $m;
+		return $model;
 	}
 
-	private function getFormsTable( $langCode, $form, $message ) {
+	public function formSubmit( $formData ) {
+		$language = $formData['language'];
+		$grammarForm = $formData['grammarform'];
+
+		$out = $this->getOutput();
+
+		$out->addHtml( $this->getFormsTable( $language, $grammarForm ) );
+	}
+
+	public function getFormsTable( $langCode, $form ) {
 		$languageNames = Language::fetchLanguageNames( $langCode );
 		$rows = '';
 		$lang = Language::factory( $langCode );
@@ -81,6 +92,7 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 				array(),
 				$outputCode
 			);
+
 			$nameCell = Html::element(
 				'td',
 				array(
@@ -90,7 +102,8 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 				$languageNames[$outputCode]
 			);
 
-			$currentMessage = str_replace( '$1', $languageNames[$outputCode], $message );
+			$currentMessage = "{{GRAMMAR:$form|$languageNames[$outputCode]}}";
+
 			$messageCell = Html::element(
 				'td',
 				array(
