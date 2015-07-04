@@ -1,0 +1,31 @@
+{
+	"name": "mediawiki/test-language-name-grammar",
+	"type": "mediawiki-extension",
+	"description": "Test grammar forms with language names",
+	"keywords": [
+		"MediaWiki",
+		"Translation"
+	],
+	"homepage": "https://www.mediawiki.org/wiki/Extension:TestLanguageNameGrammar",
+	"license": "GPL-2.0+",
+	"support": {
+		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-testlanguagenamegrammar/",
+		"irc": "irc://irc.freenode.net/mediawiki-i18n",
+		"wiki": "https://www.mediawiki.org/wiki/Extension:TestLanguageNameGrammar",
+		"forum": "https://www.mediawiki.org/wiki/Extension_talk:TestLanguageNameGrammar"
+	},
+	"require": {
+		"php": ">=5.3.0",
+		"composer/installers": ">=1.0.1"
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.9",
+		"mediawiki/mediawiki-codesniffer": "0.3.0"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor",
+			"phpcs --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --extensions=php,php5,inc --ignore=vendor -p ."
+		]
+	}
+}

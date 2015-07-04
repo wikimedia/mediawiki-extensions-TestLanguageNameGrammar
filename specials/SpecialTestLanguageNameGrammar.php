@@ -86,7 +86,7 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 		$dir = $lang->getDir();
 		$out = $this->getOutput();
 
-		foreach( array_keys( $languageNames ) as $outputCode ) {
+		foreach ( array_keys( $languageNames ) as $outputCode ) {
 			$codeCell = Html::element(
 				'td',
 				array(),
