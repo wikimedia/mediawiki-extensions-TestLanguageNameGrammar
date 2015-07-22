@@ -104,7 +104,7 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 
 			$currentMessage = "{{GRAMMAR:$form|$languageNames[$outputCode]}}";
 
-			$messageCell = Html::element(
+			$messageCell = Html::rawElement(
 				'td',
 				array(
 					'dir' => $dir,
