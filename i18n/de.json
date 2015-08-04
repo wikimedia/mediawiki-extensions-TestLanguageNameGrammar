@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Metalhead64"
+		]
+	},
+	"testlanguagenamegrammar": "Grammatikformen mit Sprachnamen testen",
+	"testlanguagenamegrammar-desc": "Ergänzt eine [[Special:TestLanguageNameGrammar|Spezialseite]] zum Testen von Grammatikformen mit Sprachnamen.",
+	"testlanguagenamegrammar-language": "Sprache",
+	"testlanguagenamegrammar-grammarform": "Grammatikform",
+	"testlanguagenamegrammar-submit": "Übertragen"
+}
