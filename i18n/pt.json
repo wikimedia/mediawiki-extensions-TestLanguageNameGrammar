@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Macofe"
 		]
 	},
-	"testlanguagenamegrammar-language": "Idioma"
+	"testlanguagenamegrammar-language": "Idioma",
+	"testlanguagenamegrammar-submit": "Enviar"
 }
