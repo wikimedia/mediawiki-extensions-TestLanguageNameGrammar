@@ -5,11 +5,10 @@
  * @file
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2 or later
  */
-// @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'TestLanguageNameGrammar' => array( 'TestLanguageNameGrammar' ),
-);
+$specialPageAliases['en'] = [
+	'TestLanguageNameGrammar' => [ 'TestLanguageNameGrammar' ],
+];

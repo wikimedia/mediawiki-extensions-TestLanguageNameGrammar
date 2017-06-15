@@ -4,7 +4,4 @@
 	<file>.</file>
 	<arg name="extensions" value="php,php5,inc"/>
 	<exclude-pattern>vendor</exclude-pattern>
-	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found">
-		<severity>0</severity>
-	</rule>
 </ruleset>

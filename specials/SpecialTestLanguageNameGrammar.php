@@ -37,7 +37,7 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 		$form->setId( 'testlanguagenamegrammar-form' );
 		$form->setSubmitText( $context->msg( 'testlanguagenamegrammar-submit' )->text() );
 		$form->setSubmitID( 'testlanguagenamegrammar-submit' );
-		$form->setSubmitCallback( array( $this, 'formSubmit' ) );
+		$form->setSubmitCallback( [ $this, 'formSubmit' ] );
 
 		$form->show();
 
@@ -55,17 +55,17 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 	}
 
 	private function getDataModel() {
-		$model = array();
+		$model = [];
 
-		$model['language'] = array(
+		$model['language'] = [
 			'type' => 'text',
 			'label-message' => 'testlanguagenamegrammar-language',
-		);
+		];
 
-		$model['grammarform'] = array(
+		$model['grammarform'] = [
 			'type' => 'text',
 			'label-message' => 'testlanguagenamegrammar-grammarform',
-		);
+		];
 
 		return $model;
 	}
@@ -89,16 +89,16 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 		foreach ( array_keys( $languageNames ) as $outputCode ) {
 			$codeCell = Html::element(
 				'td',
-				array(),
+				[],
 				$outputCode
 			);
 
 			$nameCell = Html::element(
 				'td',
-				array(
+				[
 					'dir' => $dir,
 					'lang' => $langCode,
-				),
+				],
 				$languageNames[$outputCode]
 			);
 
@@ -106,19 +106,19 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 
 			$messageCell = Html::rawElement(
 				'td',
-				array(
+				[
 					'dir' => $dir,
 					'lang' => $langCode,
-				),
+				],
 				$out->parse( $currentMessage, false, false, $lang )
 			);
 
-			$rows .= Html::rawElement( 'tr', array(), $codeCell . $nameCell . $messageCell );
+			$rows .= Html::rawElement( 'tr', [], $codeCell . $nameCell . $messageCell );
 		}
 
 		$table = Html::rawElement(
 			'table',
-			array( 'class' => 'wikitable' ),
+			[ 'class' => 'wikitable' ],
 			$rows
 		);
 
