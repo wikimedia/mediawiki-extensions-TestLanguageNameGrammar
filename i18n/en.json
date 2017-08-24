@@ -5,7 +5,7 @@
 		]
 	},
 	"testlanguagenamegrammar": "Test grammar forms with language names",
-	"testlanguagenamegrammar-desc": "Adds a [[Special:TestLanguageNameGrammar|special page]] to test grammar forms with language names.",
+	"testlanguagenamegrammar-desc": "Adds a [[Special:TestLanguageNameGrammar|special page]] to test grammar forms with language names",
 	"testlanguagenamegrammar-language": "Language",
 	"testlanguagenamegrammar-grammarform": "Grammar form",
 	"testlanguagenamegrammar-submit": "Submit"
