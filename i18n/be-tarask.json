@@ -6,5 +6,6 @@
 	},
 	"testlanguagenamegrammar": "Тэставаньне граматычных формаў з назвамі моваў",
 	"testlanguagenamegrammar-desc": "Дадае [[Special:TestLanguageNameGrammar|спэцыяльную старонку]] для тэставаньня граматычных формаў з назвамі моваў",
-	"testlanguagenamegrammar-language": "Мова"
+	"testlanguagenamegrammar-language": "Мова",
+	"testlanguagenamegrammar-grammarform": "Граматычная форма"
 }
