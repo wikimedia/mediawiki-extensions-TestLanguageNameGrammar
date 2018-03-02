@@ -7,7 +7,7 @@
 		"Translation"
 	],
 	"homepage": "https://www.mediawiki.org/wiki/Extension:TestLanguageNameGrammar",
-	"license": "GPL-2.0+",
+	"license": "GPL-2.0-or-later",
 	"support": {
 		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-testlanguagenamegrammar/",
 		"irc": "irc://irc.freenode.net/mediawiki-i18n",
