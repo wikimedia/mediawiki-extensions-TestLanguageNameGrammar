@@ -10,7 +10,7 @@
  * @file
  * @author Amir E. Aharoni
  * @copyright Copyright © 2014, Amir E. Aharoni
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2 or later
+ * @license GPL-2.0-or-later
  */
 
 /**
