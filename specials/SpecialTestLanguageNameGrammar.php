@@ -110,7 +110,7 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 					'dir' => $dir,
 					'lang' => $langCode,
 				],
-				$out->parse( $currentMessage, false, false, $lang )
+				$out->parseAsInterface( $currentMessage, false, false, $lang )
 			);
 
 			$rows .= Html::rawElement( 'tr', [], $codeCell . $nameCell . $messageCell );
