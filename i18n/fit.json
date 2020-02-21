@@ -4,6 +4,8 @@
 			"Pyscowicz"
 		]
 	},
+	"testlanguagenamegrammar": "Testaa krammatiikkimuotoja kielien nimillä",
 	"testlanguagenamegrammar-language": "Kieli",
+	"testlanguagenamegrammar-grammarform": "Krammatiikkimuoto",
 	"testlanguagenamegrammar-submit": "Lähätä"
 }
