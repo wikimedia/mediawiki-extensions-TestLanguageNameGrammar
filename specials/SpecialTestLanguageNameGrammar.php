@@ -40,18 +40,6 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 		$form->setSubmitCallback( [ $this, 'formSubmit' ] );
 
 		$form->show();
-
-		/*
-		$out = $this->getOutput();
-
-		$out->addHtml( $this->getFormsTable(
-			'ru',
-			'languageadverb',
-			'Она говорит {{GRAMMAR:languageadverb|$1}}'
-		) );
-		*/
-
-		return;
 	}
 
 	private function getDataModel() {
