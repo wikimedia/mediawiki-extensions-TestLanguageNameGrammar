@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
-	"testlanguagenamegrammar-language": "Kielâ"
+	"testlanguagenamegrammar-language": "Kielâ",
+	"testlanguagenamegrammar-submit": "Vuolgât"
 }
