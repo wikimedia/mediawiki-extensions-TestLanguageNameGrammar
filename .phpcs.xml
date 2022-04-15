@@ -7,5 +7,4 @@
 	</rule>
 	<file>.</file>
 	<arg name="extensions" value="php" />
-	<exclude-pattern>vendor</exclude-pattern>
 </ruleset>
