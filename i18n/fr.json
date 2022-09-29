@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Verdy p",
 			"VictorBrice",
 			"Wladek92"
 		]
@@ -9,5 +10,5 @@
 	"testlanguagenamegrammar-desc": "Ajoute une [[Special:TestLanguageNameGrammar|page spéciale]] pour examiner des formes de grammaire avec des noms de langue",
 	"testlanguagenamegrammar-language": "Langue",
 	"testlanguagenamegrammar-grammarform": "Forme grammaticale",
-	"testlanguagenamegrammar-submit": "Envoyer"
+	"testlanguagenamegrammar-submit": "Soumettre"
 }
