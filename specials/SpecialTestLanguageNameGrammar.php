@@ -13,6 +13,8 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * A form for testing a message and a grammar form with all language names
  *
@@ -68,9 +70,16 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 	}
 
 	public function getFormsTable( $langCode, $form ) {
-		$languageNames = Language::fetchLanguageNames( $langCode );
+		if ( method_exists( MediaWikiServices::class, 'getLanguageFactory' ) ) {
+			// MW 1.35+
+			$services = MediaWikiServices::getInstance();
+			$languageNames = $services->getLanguageNameUtils()->getLanguageNames( $langCode );
+			$lang = $services->getLanguageFactory()->getLanguage( $langCode );
+		} else {
+			$languageNames = Language::fetchLanguageNames( $langCode );
+			$lang = Language::factory( $langCode );
+		}
 		$rows = '';
-		$lang = Language::factory( $langCode );
 		$dir = $lang->getDir();
 		$out = $this->getOutput();
 
