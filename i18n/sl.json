@@ -4,6 +4,9 @@
 			"Eleassar"
 		]
 	},
+	"testlanguagenamegrammar": "Preizkusite slovnične oblike z imeni jezikov",
+	"testlanguagenamegrammar-desc": "Doda [[Special:TestLanguageNameGrammar|posebno stran]] za preizkušanje slovničnih oblik z imeni jezikov",
 	"testlanguagenamegrammar-language": "Jezik",
+	"testlanguagenamegrammar-grammarform": "Slovnična oblika",
 	"testlanguagenamegrammar-submit": "Pošlji"
 }
