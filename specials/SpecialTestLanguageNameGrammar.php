@@ -70,15 +70,9 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 	}
 
 	public function getFormsTable( $langCode, $form ) {
-		if ( method_exists( MediaWikiServices::class, 'getLanguageFactory' ) ) {
-			// MW 1.35+
-			$services = MediaWikiServices::getInstance();
-			$languageNames = $services->getLanguageNameUtils()->getLanguageNames( $langCode );
-			$lang = $services->getLanguageFactory()->getLanguage( $langCode );
-		} else {
-			$languageNames = Language::fetchLanguageNames( $langCode );
-			$lang = Language::factory( $langCode );
-		}
+		$services = MediaWikiServices::getInstance();
+		$languageNames = $services->getLanguageNameUtils()->getLanguageNames( $langCode );
+		$lang = $services->getLanguageFactory()->getLanguage( $langCode );
 		$rows = '';
 		$dir = $lang->getDir();
 		$out = $this->getOutput();
