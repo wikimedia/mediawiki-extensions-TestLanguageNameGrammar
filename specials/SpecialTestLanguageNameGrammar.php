@@ -31,7 +31,7 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 		$this->outputHeader();
 
 		$context = $this->getContext();
-		$form = new HtmlForm(
+		$form = new HTMLForm(
 			$this->getDataModel(),
 			$context,
 			'testlanguagenamegrammar'
