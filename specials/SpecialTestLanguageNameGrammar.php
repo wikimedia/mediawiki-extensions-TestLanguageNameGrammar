@@ -83,7 +83,7 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 		$dir = $lang->getDir();
 		$out = $this->getOutput();
 
-		foreach ( array_keys( $languageNames ) as $outputCode ) {
+		foreach ( $languageNames as $outputCode => $name ) {
 			$codeCell = Html::element(
 				'td',
 				[],
@@ -96,10 +96,10 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 					'dir' => $dir,
 					'lang' => $langCode,
 				],
-				$languageNames[$outputCode]
+				$name
 			);
 
-			$currentMessage = "{{GRAMMAR:$form|$languageNames[$outputCode]}}";
+			$currentMessage = "{{GRAMMAR:$form|$name}}";
 
 			$messageCell = Html::rawElement(
 				'td',
