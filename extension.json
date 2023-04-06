@@ -12,7 +12,13 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"SpecialPages": {
-		"TestLanguageNameGrammar": "SpecialTestLanguageNameGrammar"
+		"TestLanguageNameGrammar": {
+			"class": "SpecialTestLanguageNameGrammar",
+			"services": [
+				"LanguageFactory",
+				"LanguageNameUtils"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"TestLanguageNameGrammar": [

@@ -13,7 +13,8 @@
  * @license GPL-2.0-or-later
  */
 
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Languages\LanguageFactory;
+use MediaWiki\Languages\LanguageNameUtils;
 
 /**
  * A form for testing a message and a grammar form with all language names
@@ -22,8 +23,19 @@ use MediaWiki\MediaWikiServices;
  */
 
 class SpecialTestLanguageNameGrammar extends SpecialPage {
-	public function __construct() {
+	/** @var LanguageFactory */
+	private $languageFactory;
+
+	/** @var LanguageNameUtils */
+	private $languageNameUtils;
+
+	public function __construct(
+		LanguageFactory $languageFactory,
+		LanguageNameUtils $languageNameUtils
+	) {
 		parent::__construct( 'TestLanguageNameGrammar' );
+		$this->languageFactory = $languageFactory;
+		$this->languageNameUtils = $languageNameUtils;
 	}
 
 	public function execute( $parameters ) {
@@ -70,9 +82,8 @@ class SpecialTestLanguageNameGrammar extends SpecialPage {
 	}
 
 	public function getFormsTable( $langCode, $form ) {
-		$services = MediaWikiServices::getInstance();
-		$languageNames = $services->getLanguageNameUtils()->getLanguageNames( $langCode );
-		$lang = $services->getLanguageFactory()->getLanguage( $langCode );
+		$languageNames = $this->languageNameUtils->getLanguageNames( $langCode );
+		$lang = $this->languageFactory->getLanguage( $langCode );
 		$rows = '';
 		$dir = $lang->getDir();
 		$out = $this->getOutput();
