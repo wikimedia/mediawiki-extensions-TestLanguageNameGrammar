@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
+	"testlanguagenamegrammar": "Grammaticale vormen testen met taalnamen",
+	"testlanguagenamegrammar-desc": "Voegt een [[Special:TestLanguageNameGrammar|speciale pagina]] toe om grammaticale vormen met taalnamen te testen",
 	"testlanguagenamegrammar-language": "Taal",
+	"testlanguagenamegrammar-grammarform": "Grammaticale vorm",
 	"testlanguagenamegrammar-submit": "Verzenden"
 }
