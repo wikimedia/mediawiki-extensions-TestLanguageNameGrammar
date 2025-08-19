@@ -4,5 +4,7 @@
 			"Bosogo"
 		]
 	},
-	"testlanguagenamegrammar-language": "Тил"
+	"testlanguagenamegrammar-language": "Тил",
+	"testlanguagenamegrammar-grammarform": "Грамматикалык форма",
+	"testlanguagenamegrammar-submit": "Аткаруу"
 }
