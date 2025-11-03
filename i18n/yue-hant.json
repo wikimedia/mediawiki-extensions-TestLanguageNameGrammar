@@ -1,8 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yueman"
+			"Yueman",
+			"JeffreyKim"
 		]
 	},
+	"testlanguagenamegrammar": "用語言名嚟測試文法形式",
+	"testlanguagenamegrammar-desc": "加個語言名嘅[[Special:TestLanguageNameGrammar|特別版]]嚟測試文法形式",
+	"testlanguagenamegrammar-language": "語言",
+	"testlanguagenamegrammar-grammarform": "文法形式",
 	"testlanguagenamegrammar-submit": "遞交"
 }
