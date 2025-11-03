@@ -13,6 +13,7 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\Html\Html;
 use MediaWiki\Languages\LanguageFactory;
 use MediaWiki\Languages\LanguageNameUtils;
 
