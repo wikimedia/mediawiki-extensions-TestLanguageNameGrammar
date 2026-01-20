@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bgo eiu"
+			"Bgo eiu",
+			"Cabal"
 		]
 	},
 	"testlanguagenamegrammar-language": "ਬੋਲੀ",
 	"testlanguagenamegrammar-grammarform": "ਵਿਆਕਰਨਕ ਰੂਪ",
-	"testlanguagenamegrammar-submit": "ਭੇਜੋ"
+	"testlanguagenamegrammar-submit": "ਹਵਾਲੇ ਕਰੋ"
 }
