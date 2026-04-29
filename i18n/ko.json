@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Revi"
+			"Revi",
+			"Tensama0415"
 		]
 	},
+	"testlanguagenamegrammar": "언어 이름을 사용하여 문법 폼을 테스트합니다",
+	"testlanguagenamegrammar-desc": "언어 이름을 사용하여 문법 폼을 테스트하기 위한 [[Special:TestLanguageNameGrammar|특수 문서]]를 추가합니다",
 	"testlanguagenamegrammar-language": "언어",
 	"testlanguagenamegrammar-grammarform": "문법 폼",
 	"testlanguagenamegrammar-submit": "제출"
