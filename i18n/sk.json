@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"testlanguagenamegrammar": "Test gramatických tvarov s názvami jazykov",
+	"testlanguagenamegrammar-desc": "Pridáva [[Special:TestLanguageNameGrammar|špeciálnu stránku]] na testovanie gramatických tvarov s názvami jazykov",
+	"testlanguagenamegrammar-language": "Jazyk",
+	"testlanguagenamegrammar-grammarform": "Gramatický tvar",
+	"testlanguagenamegrammar-submit": "Odoslať"
+}
