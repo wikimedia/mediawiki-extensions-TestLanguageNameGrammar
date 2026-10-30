@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rafka Aditia"
+		]
+	},
+	"testlanguagenamegrammar": "Nguji wangun tata basa kalawan ngaran basa",
+	"testlanguagenamegrammar-desc": "Tambahkeun [[Special:TestLanguageNameGrammar|kaca husus]] pikeun nguji wangun tata basa kalawan ngaran basa",
+	"testlanguagenamegrammar-language": "Basa",
+	"testlanguagenamegrammar-grammarform": "Wangun tata basa",
+	"testlanguagenamegrammar-submit": "Kirim"
+}
